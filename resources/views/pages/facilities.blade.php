@@ -62,68 +62,68 @@
 
     <header class="page-header">
         <div class="container fade-in">
-            <h1>Fasilitas Premium</h1>
-            <p>Menyediakan lingkungan terbaik untuk belajar, berolahraga, dan berkreasi.</p>
+           <h1 style="color: white;">Fasilitas Premium</h1>
+            <p style="color: white;">Menyediakan lingkungan terbaik untuk belajar, berolahraga, dan berkreasi.</p>
         </div>
     </header>
 
     <section style="padding: 100px 0;">
-        <div class="container">
-            <div class="section-header">
-                <h2>Sekilas Tentang Kampus Kami</h2>
-                <p>Dirancang untuk menginspirasi keunggulan pada setiap siswa.</p>
+    <div class="container">
+        <div class="section-header">
+            <h2>Sekilas Tentang Sekolah Kami</h2>
+            <p>Fasilitas lengkap untuk mendukung pembelajaran dan pengembangan siswa.</p>
+        </div>
+        
+        <div class="facility-grid">
+            <!-- Lab Komputer -->
+            <div class="facility-item fade-in">
+                <img src="{{asset ('images/ngoding.jpg')}}" alt="Lab Komputer">
+                <div class="facility-overlay">
+                    <h3 style="color: white;">Lab Komputer</h3>
+                    <p>Fasilitas komputer modern untuk pembelajaran pemrograman dan desain grafis.</p>
+                </div>
             </div>
-            
-            <div class="facility-grid">
-                <!-- Facility 1 -->
-                <div class="facility-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?q=80&w=2079&auto=format&fit=crop" alt="Perpustakaan Pintar">
-                    <div class="facility-overlay">
-                        <h3>Perpustakaan Pintar</h3>
-                        <p>Lebih dari 50.000 judul dan sumber daya digital.</p>
-                    </div>
+            <!-- Bengkel TSM -->
+            <div class="facility-item fade-in" style="animation-delay: 0.1s;">
+                <img src="{{asset ('images/motorr.jpg')}}" alt="Bengkel TSM">
+                <div class="facility-overlay">
+                    <h3 style="color: white;">Bengkel TSM</h3>
+                    <p>Bengkel lengkap untuk praktik Teknik Sepeda Motor.</p>
                 </div>
-                <!-- Facility 2 -->
-                <div class="facility-item fade-in" style="animation-delay: 0.1s;">
-                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1986&auto=format&fit=crop" alt="Lab Sains">
-                    <div class="facility-overlay">
-                        <h3>Lab Sains Interaktif</h3>
-                        <p>Peralatan canggih untuk fisika, kimia, dan biologi.</p>
-                    </div>
+            </div>
+            <!-- Bengkel TKR -->
+            <div class="facility-item fade-in" style="animation-delay: 0.2s;">
+                <img src="{{asset ('images/mobil.jpg')}}" alt="Bengkel TKR">
+                <div class="facility-overlay">
+                    <h3 style="color: white;">Bengkel TKR</h3>
+                    <p>Peralatan lengkap untuk praktik Teknik Kendaraan Ringan.</p>
                 </div>
-                <!-- Facility 3 -->
-                <div class="facility-item fade-in" style="animation-delay: 0.2s;">
-                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop" alt="Hub TI">
-                    <div class="facility-overlay">
-                        <h3>Hub TI Modern</h3>
-                        <p>Konektivitas berkecepatan tinggi dan teknologi komputasi terbaru.</p>
-                    </div>
+            </div>
+            <!-- Gedung Sekolah -->
+            <div class="facility-item fade-in" style="animation-delay: 0.3s;">
+                <img src="{{asset ('images/sakola.jpg')}}" alt="Gedung Sekolah">
+                <div class="facility-overlay">
+                    <h3 style="color: white;">Gedung Sekolah</h3>
+                    <p>Lingkungan belajar yang nyaman dan kondusif.</p>
                 </div>
-                <!-- Facility 4 -->
-                <div class="facility-item fade-in" style="animation-delay: 0.3s;">
-                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=2187&auto=format&fit=crop" alt="Pusat Olahraga">
-                    <div class="facility-overlay">
-                        <h3>Pusat Olahraga Serbaguna</h3>
-                        <p>Lapangan indoor, kolam renang ukuran Olimpiade, dan pusat kebugaran.</p>
-                    </div>
+            </div>
+            <!-- Perpustakaan -->
+            <div class="facility-item fade-in" style="animation-delay: 0.4s;">
+                <img src="{{asset ('images/perpus.jpg')}}" alt="Perpustakaan">
+                <div class="facility-overlay">
+                    <h3 style="color: white;">Perpustakaan</h3>
+                    <p>Sumber belajar lengkap untuk menunjang pendidikan.</p>
                 </div>
-                <!-- Facility 5 -->
-                <div class="facility-item fade-in" style="animation-delay: 0.4s;">
-                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=2070&auto=format&fit=crop" alt="Studio Seni">
-                    <div class="facility-overlay">
-                        <h3>Studio Seni Kreatif</h3>
-                        <p>Ruang untuk melukis, patung, dan desain digital.</p>
-                    </div>
-                </div>
-                <!-- Facility 6 -->
-                <div class="facility-item fade-in" style="animation-delay: 0.5s;">
-                    <img src="https://images.unsplash.com/photo-1560523182-1bf6f7887304?q=80&w=1974&auto=format&fit=crop" alt="Kantin">
-                    <div class="facility-overlay">
-                        <h3>Ruang Makan Sehat</h3>
-                        <p>Makanan bergizi yang disiapkan oleh koki ahli.</p>
-                    </div>
+            </div>
+            <!-- Mushola -->
+            <div class="facility-item fade-in" style="animation-delay: 0.5s;">
+                <img src="{{asset ('images/sholat.jpg')}}" alt="Mushola">
+                <div class="facility-overlay">
+                    <h3 style="color: white;">Mushola</h3>
+                    <p>Tempat ibadah yang nyaman untuk warga sekolah.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 @endsection

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Selamat Datang di EduGold Global School')
+@section('title', 'SMK Assalaam')
 
 @section('content')
     <!-- Hero Section -->

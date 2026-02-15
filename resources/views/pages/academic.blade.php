@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Program Akademik')
+@section('title', 'Program Keahlian')
 
 @section('content')
     <style>
         .page-header {
             padding: 150px 0 80px;
-            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop');
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('{{ asset('images/sakola.jpg') }}');
             background-size: cover;
             background-position: center;
             color: var(--white);
@@ -50,54 +50,77 @@
         }
 
         .curriculum-item {
-            padding: 20px;
+            padding: 15px;
             background: var(--bg-light);
             border-radius: 10px;
             text-align: center;
             font-weight: 600;
             color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .curriculum-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
     </style>
 
     <header class="page-header">
         <div class="container fade-in">
-            <h1>Keunggulan Akademik</h1>
-            <p>Mengembangkan pemikir, inovator, dan pemimpin masa depan.</p>
+            <h1>Program Keahlian</h1>
+            <p>Menyiapkan lulusan yang kompeten dan siap kerja di bidangnya masing-masing.</p>
         </div>
     </header>
 
     <section style="padding: 100px 0;">
         <div class="container">
-            <!-- Program 1 -->
+            <!-- Program RPL -->
             <div class="program-card fade-in">
-                <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?q=80&w=2072&auto=format&fit=crop" alt="Primary School" class="program-img">
+                <img src="{{ asset('images/ngoding.jpg') }}" alt="Rekayasa Perangkat Lunak" class="program-img">
                 <div class="program-content">
-                    <span style="color: var(--secondary-color); font-weight: 700; text-transform: uppercase;">Usia 6 - 11</span>
-                    <h2 style="margin: 15px 0 20px;">Sekolah Dasar</h2>
-                    <p style="margin-bottom: 30px;">Program dasar kami berfokus pada pembelajaran berbasis inkuiri. Kami mengikuti International Baccalaureate Primary Years Programme (IB PYP), mendorong siswa untuk menjadi penasaran dan kolaboratif.</p>
-                    <h3>Mata Pelajaran Inti:</h3>
+                    <span style="color: var(--secondary-color); font-weight: 700; text-transform: uppercase;">Jurusan Unggulan</span>
+                    <h2 style="margin: 15px 0 20px;">Rekayasa Perangkat Lunak (RPL)</h2>
+                    <p style="margin-bottom: 30px;">Program keahlian yang mempersiapkan siswa untuk menjadi tenaga profesional di bidang pengembangan perangkat lunak. Siswa akan dibekali dengan keterampilan pemrograman, pengembangan aplikasi, dan manajemen basis data.</p>
+                    <h3>Kompetensi Keahlian:</h3>
                     <div class="curriculum-grid">
-                        <div class="curriculum-item">Matematika</div>
-                        <div class="curriculum-item">Bahasa</div>
-                        <div class="curriculum-item">Sains</div>
-                        <div class="curriculum-item">Studi Sosial</div>
+                        <div class="curriculum-item">Pemrograman Dasar</div>
+                        <div class="curriculum-item">Basis Data</div>
+                        <div class="curriculum-item">Pemrograman Web</div>
+                        <div class="curriculum-item">Pemrograman Mobile</div>
                     </div>
                 </div>
             </div>
 
-            <!-- Program 2 -->
+            <!-- Program TKR -->
             <div class="program-card fade-in" style="flex-direction: row-reverse;">
-                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2132&auto=format&fit=crop" alt="Secondary School" class="program-img">
+                <img src="{{ asset('images/mobil.jpg') }}" alt="Teknik Kendaraan Ringan" class="program-img">
                 <div class="program-content">
-                    <span style="color: var(--secondary-color); font-weight: 700; text-transform: uppercase;">Usia 12 - 18</span>
-                    <h2 style="margin: 15px 0 20px;">Sekolah Menengah</h2>
-                    <p style="margin-bottom: 30px;">Di sekolah menengah, kami beralih ke Program Tahun Menengah dan Diploma IB. Siswa terlibat dalam penelitian mendalam, analisis kritis, dan pengabdian masyarakat.</p>
-                    <h3>Jalur Utama:</h3>
+                    <span style="color: var(--secondary-color); font-weight: 700; text-transform: uppercase;">Jurusan Unggulan</span>
+                    <h2 style="margin: 15px 0 20px;">Teknik Kendaraan Ringan (TKR)</h2>
+                    <p style="margin-bottom: 30px;">Program keahlian yang berfokus pada perawatan dan perbaikan kendaraan ringan. Siswa akan mempelajari sistem mesin, kelistrikan, dan mekanik kendaraan bermotor roda empat.</p>
+                    <h3>Kompetensi Keahlian:</h3>
                     <div class="curriculum-grid">
-                        <div class="curriculum-item">Jalur STEM</div>
-                        <div class="curriculum-item">Seni & Desain</div>
-                        <div class="curriculum-item">Bisnis & Ekonomi</div>
-                        <div class="curriculum-item">Humaniora</div>
+                        <div class="curriculum-item">Sistem Mesin</div>
+                        <div class="curriculum-item">Kelistrikan Otomotif</div>
+                        <div class="curriculum-item">Sistem Pemindah Tenaga</div>
+                        <div class="curriculum-item">Perawatan Kendaraan</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Program TBSM -->
+            <div class="program-card fade-in">
+                <img src="{{ asset('images/motorr.jpg') }}" alt="Teknik Bisnis Sepeda Motor" class="program-img">
+                <div class="program-content">
+                    <span style="color: var(--secondary-color); font-weight: 700; text-transform: uppercase;">Jurusan Unggulan</span>
+                    <h2 style="margin: 15px 0 20px;">Teknik Bisnis Sepeda Motor (TBSM)</h2>
+                    <p style="margin-bottom: 30px;">Program keahlian yang mempersiapkan siswa untuk menjadi teknisi sepeda motor yang handal dan wirausaha di bidang otomotif. Fokus pada perawatan, perbaikan, dan manajemen bengkel sepeda motor.</p>
+                    <h3>Kompetensi Keahlian:</h3>
+                    <div class="curriculum-grid">
+                        <div class="curriculum-item">Perbaikan Mesin</div>
+                        <div class="curriculum-item">Kelistrikan Sepeda Motor</div>
+                        <div class="curriculum-item">Sistem Bahan Bakar</div>
+                        <div class="curriculum-item">Manajemen Bengkel</div>
                     </div>
                 </div>
             </div>

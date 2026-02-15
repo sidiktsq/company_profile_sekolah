@@ -80,7 +80,7 @@
 
     <header class="page-header">
         <div class="container fade-in">
-            <h1>Terhubung Dengan Kami</h1>
+            <h1 style="color: white;" >Terhubung Dengan Kami</h1>
             <p>Kami di sini untuk menjawab pertanyaan Anda dan menyambut Anda di komunitas kami.</p>
         </div>
     </header>
@@ -113,7 +113,7 @@
                         <i class='bx bxs-envelope'></i>
                         <div>
                             <h3>Email</h3>
-                            <p>info@edugold.school<br>pendaftaran@edugold.school</p>
+                            <p>info@smkassalaambandung.school<br>pendaftaran@smkassalaambandung.school</p>
                         </div>
                     </div>
                 </div>

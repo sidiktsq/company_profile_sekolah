@@ -373,10 +373,10 @@
                     </div>
                     <p>SMK Assalaam berkomitmen untuk mencetak generasi unggul yang siap menghadapi tantangan global melalui pendidikan teknologi dan karakter yang kuat.</p>
                     <div class="social-links">
-                        <a href="#"><i class='bx bxl-instagram'></i></a>
-                        <a href="#"><i class='bx bxl-facebook'></i></a>
-                        <a href="#"><i class='bx bxl-tiktok'></i></a>
-                        <a href="#"><i class='bx bxl-youtube'></i></a>
+                        <a href="https://www.instagram.com/smkassalaam/"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.facebook.com/smkassalaam/"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.tiktok.com/@smkassalaambandung"><i class='bx bxl-tiktok'></i></a>
+                        <a href="https://www.youtube.com/@smkassalaambandung4011"><i class='bx bxl-youtube'></i></a>
                     </div>
                 </div>
                 <div class="footer-links">
@@ -389,12 +389,11 @@
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Program Unggulan</h4>
+                    <h4>Jurusan</h4>
                     <ul>
-                        <li><a href="#">Teknik Informatika</a></li>
-                        <li><a href="#">Multimedia</a></li>
-                        <li><a href="#">Rekayasa Perangkat Lunak</a></li>
-                        <li><a href="#">Beasiswa Industri</a></li>
+                        <li><a href="{{route('rpl')}}">RPL (Rekayasa Peringkat Lunak)</a></li>
+                        <li><a href="{{route('tkr')}}">TKR (Teknik Kendaraan Ringan)</a></li>
+                        <li><a href="{{route('tbsm')}}">TBSM (Teknik Bisnis Sepeda Motor)</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">

@@ -66,31 +66,31 @@
     </div>
 </section>
 
-<!-- Curriculum -->
+<!-- Fasilitas Utama Lab -->
 <section style="padding: 100px 0; background: var(--white);">
     <div class="container">
-        <h2 style="color: var(--primary-color); text-align: center; font-size: 2.5rem; margin-bottom: 60px;">Apa yang Akan Dipelajari?</h2>
+        <h2 style="color: var(--primary-color); text-align: center; font-size: 2.5rem; margin-bottom: 60px;">Fasilitas Utama Lab</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
-            <div style="padding: 40px; border-radius: 20px; border: 1px solid #efefef;">
+            <div style="padding: 40px; border-radius: 20px; border: 1px solid #efefef; transition: transform 0.3s ease, box-shadow 0.3s ease;">
                 <h4 style="color: var(--secondary-color); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-                    <span style="width: 30px; height: 30px; background: var(--primary-color); color: var(--white); display: flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 0.9rem;">1</span>
-                    Dasar Pemrograman
+                    <i class='bx bx-desktop' style="font-size: 2rem; color: var(--primary-color);"></i>
+                    Lab Komputer Modern
                 </h4>
-                <p style="color: #666; line-height: 1.7;">Membangun fondasi logika dengan algoritma, struktur data, dan bahasa pemrograman dasar.</p>
+                <p style="color: #666; line-height: 1.7;">Dilengkapi dengan perangkat keras terbaru dan software pendukung untuk pengembangan aplikasi, seperti Visual Studio Code, Android Studio, dan berbagai framework pengembangan terupdate.</p>
             </div>
-            <div style="padding: 40px; border-radius: 20px; border: 1px solid #efefef;">
+            <div style="padding: 40px; border-radius: 20px; border: 1px solid #efefef; transition: transform 0.3s ease, box-shadow 0.3s ease;">
                 <h4 style="color: var(--secondary-color); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-                    <span style="width: 30px; height: 30px; background: var(--primary-color); color: var(--white); display: flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 0.9rem;">2</span>
-                    Object Oriented Programming (OOP)
+                    <i class='bx bx-wifi' style="font-size: 2rem; color: var(--primary-color);"></i>
+                    Jaringan Berkecepatan Tinggi
                 </h4>
-                <p style="color: #666; line-height: 1.7;">Memahami konsep pemrograman berorientasi objek untuk skalabilitas aplikasi tingkat lanjut.</p>
+                <p style="color: #666; line-height: 1.7;">Didukung dengan koneksi internet fiber optik berkecepatan tinggi dan jaringan lokal yang stabil untuk mendukung proses pembelajaran dan pengembangan proyek secara optimal.</p>
             </div>
-            <div style="padding: 40px; border-radius: 20px; border: 1px solid #efefef;">
+            <div style="padding: 40px; border-radius: 20px; border: 1px solid #efefef; transition: transform 0.3s ease, box-shadow 0.3s ease;">
                 <h4 style="color: var(--secondary-color); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-                    <span style="width: 30px; height: 30px; background: var(--primary-color); color: var(--white); display: flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 0.9rem;">3</span>
-                    Fullstack Development
+                    <i class='bx bx-group' style="font-size: 2rem; color: var(--primary-color);"></i>
+                    Area Kolaborasi Inovatif
                 </h4>
-                <p style="color: #666; line-height: 1.7;">Integrasi Frontend dan Backend untuk menghasilkan aplikasi yang utuh dan fungsional.</p>
+                <p style="color: #666; line-height: 1.7;">Ruang diskusi dan kerja kelompok yang nyaman dengan fasilitas presentasi interaktif untuk memfasilitasi kolaborasi dan brainstorming dalam pengembangan proyek.</p>
             </div>
         </div>
     </div>
