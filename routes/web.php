@@ -14,3 +14,6 @@ Route::get('/sambutan', [PageController::class, 'sambutan'])->name('sambutan');
 Route::get('/rpl', [PageController::class, 'rpl'])->name('rpl');
 Route::get('/tkr', [PageController::class, 'tkr'])->name('tkr');
 Route::get('/tbsm', [PageController::class, 'tbsm'])->name('tbsm');
+
+// Search Route
+Route::get('/search', [PageController::class, 'search'])->name('search');

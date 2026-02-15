@@ -17,9 +17,7 @@
             </div>
         </div>
         
-        <!-- Slider Arrows (Keeping for functionality) -->
-        <div style="position: absolute; left: 30px; top: 50%; transform: translateY(-50%); font-size: 2.5rem; color: rgba(255,255,255,0.3); cursor: pointer; z-index: 20;"><i class='bx bx-chevron-left'></i></div>
-        <div style="position: absolute; right: 30px; top: 50%; transform: translateY(-50%); font-size: 2.5rem; color: rgba(255,255,255,0.3); cursor: pointer; z-index: 20;"><i class='bx bx-chevron-right'></i></div>
+     
     </section>
 
     <!-- Stats Section -->
@@ -56,9 +54,9 @@
                         <img src="{{ asset('images/smk.png') }}" alt="School Background" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;">
                     </div>
                     <div style="position: absolute; bottom: 0; right: 0; width: 75%; height: 75%; border-radius: 20px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.2); border: 8px solid var(--white);">
-                        <img src="https://images.unsplash.com/photo-1544161515-4af6b1d46409?q=80&w=2070&auto=format&fit=crop" alt="Kepala Sekolah" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="{{ asset('images/pak.png') }}" alt="Kepala Sekolah" style="width: 100%; height: 100%; object-fit: cover;">
                         <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 30px; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: var(--white);">
-                            <h3 style="margin-bottom: 5px; font-size: 1.5rem;">H. Marzuki Miad, M.Pd.</h3>
+                            <h3 style="margin-bottom: 5px; font-size: 1.5rem;">H. M. Luthfi Almanfaluthi, S.T., M.Pd.</h3>
                             <p style="font-size: 0.9rem; opacity: 0.9;">Kepala Sekolah</p>
                         </div>
                     </div>

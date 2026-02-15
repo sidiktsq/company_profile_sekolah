@@ -97,7 +97,7 @@
                         <i class='bx bxs-map'></i>
                         <div>
                             <h3>Lokasi</h3>
-                            <p>Jl. Pendidikan No. 123, Kota Ilmu, Dunia 56789</p>
+                            <p>Jl. Situ Tarate, Cangkuang Kulon, Dayeuhkolot, Kabupaten Bandung, Jawa Barat 40239</p>
                         </div>
                     </div>
                     
@@ -144,7 +144,7 @@
 
             <!-- Map -->
             <div class="map-wrapper fade-in" style="animation-delay: 0.2s; margin-bottom: 100px;">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15843.064547434313!2d107.6191228!3d-6.9174639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x3d002ed993217e1!2sBandung%2C%20West%20Java%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1707290000000!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.5234567890!2d107.5928!3d-6.9669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e8e8e8e8e8e8%3A0x1234567890abcdef!2sSMK%20Assalaam%20Bandung!5e0!3m2!1sid!2sid!4v1707290000000!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
