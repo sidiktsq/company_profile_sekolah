@@ -67,7 +67,7 @@
                     <h2 style="color: var(--primary-color); font-size: 2.25rem; margin-bottom: 25px; font-weight: 700;">Sambutan Kepala Sekolah</h2>
                     <p style="font-style: italic; margin-bottom: 20px; color: #555;">Assalamu'alaikum Warahmatullahi Wabarakatuh.</p>
                     <p style="margin-bottom: 30px; line-height: 1.8; color: #444; font-size: 1.05rem;">
-                        Salam sejahtera untuk kita semua. Selamat datang di website EduGold Global School. Website ini dibangun sebagai sarana atau media informasi dan komunikasi sekolah, karena sejalan dengan perkembangan teknologi industri 4.0 yang berguna untuk memudahkan mencari informasi tentang EduGold Global School.
+                        Salam sejahtera untuk kita semua. Selamat datang di website resmi SMK Assalaam Bandung.Website ini hadir sebagai sarana informasi dan komunikasi yang transparan, sejalan dengan pesatnya perkembangan teknologi di era industri 4.0 dan menyongsong era 5.0. Kami berkomitmen menyediakan platform yang memudahkan masyarakat, orang tua, maupun siswa dalam mengakses seluruh informasi mengenai kurikulum, prestasi, dan kegiatan pendidikan di SMK Assalaam Bandung secara cepat dan akurat.
                     </p>
                     <a href="{{ route('sambutan') }}" class="btn btn-primary" style="background: #ef6c00; border-color: #ef6c00;">Selengkapnya</a>
 
@@ -164,11 +164,6 @@
                                 <div style="width: 15px; height: 15px; background: #000; border-radius: 50%;"></div>
                             @endfor
                         </div>
-                    </div>
-                    <div style="margin-top: 20px; display: flex; justify-content: center; gap: 15px; color: #007bff; font-size: 1.5rem;">
-                        <i class='bx bx-chevron-left' style="cursor: pointer;" onclick="prevReason()"></i>
-                        <div style="width: 30px; height: 10px; background: #fff; border-radius: 5px; box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);"></div>
-                        <i class='bx bx-chevron-right' style="cursor: pointer;" onclick="nextReason()"></i>
                     </div>
                 </div>
 

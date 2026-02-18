@@ -7,7 +7,7 @@
     <section style="padding: 80px 0 40px; background-color: #f8fbfc;">
         <div class="container">
             <h1 style="color: var(--primary-color); font-size: 2.5rem; font-weight: 700; margin-bottom: 10px;">Sambutan Kepala Sekolah</h1>
-            <p style="color: #666; font-size: 1.1rem; letter-spacing: 1px;">EDUGOLD GLOBAL SCHOOL</p>
+            <p style="color: #666; font-size: 1.1rem; letter-spacing: 1px;">SMK ASSALAAM BANDUNG</p>
             
             <!-- Decorative Divider -->
             <div style="margin-top: 30px; display: flex; gap: 8px;">

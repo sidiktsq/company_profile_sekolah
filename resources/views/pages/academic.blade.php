@@ -67,7 +67,7 @@
 
     <header class="page-header">
         <div class="container fade-in">
-            <h1>Program Keahlian</h1>
+            <h1>Program Akademik</h1>
             <p>Menyiapkan lulusan yang kompeten dan siap kerja di bidangnya masing-masing.</p>
         </div>
     </header>
