@@ -29,7 +29,7 @@
                     <p>Lulusan Terbaik</p>
                 </div>
                 <div class="stat-item fade-in" style="animation-delay: 0.1s;">
-                    <h2 style="font-size: 3rem; color: var(--secondary-color);"><span class="counter" data-target="95">0</span>%</h2>
+                    <h2 style="font-size: 3rem; color: var(--secondary-color);"><span class="counter" data-target="90   ">0</span>%</h2>
                     <p>Telah Bekerja</p>
                 </div>
                 <div class="stat-item fade-in" style="animation-delay: 0.2s;">

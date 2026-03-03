@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <!-- Icons -->
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     
@@ -50,6 +50,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            max-width: 95%;
+            padding: 0 40px;
         }
         
         .logo {
@@ -349,11 +351,11 @@
             </a>
             <div class="nav-links">
                 <a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'active' : '' }}">Beranda</a>
-                <a href="{{ route('about') }}" class="{{ request()->routeIs('about') ? 'active' : '' }}">Tentang Kami</a>
-                <a href="{{ route('academic') }}" class="{{ request()->routeIs('academic') ? 'active' : '' }}">Akademik</a>
+                <a href="{{ route('about') }}" class="{{ request()->routeIs('about') ? 'active' : '' }}">Profil</a>
+                <a href="{{ route('academic') }}" class="{{ request()->routeIs('academic') ? 'active' : '' }}">Kurikulum</a>
                 <a href="{{ route('facilities') }}" class="{{ request()->routeIs('facilities') ? 'active' : '' }}">Fasilitas</a>
-                <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'active' : '' }}">Kontak</a>
                 <a href="{{ route('kesiswaan') }}" class="{{ request()->routeIs('kesiswaan') ? 'active' : '' }}">Kesiswaan</a>
+                <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'active' : '' }}">Kontak</a>
                 
             </div>
             <div class="header-actions">
@@ -508,9 +510,10 @@
                     <h4>Tautan Cepat</h4>
                     <ul>
                         <li><a href="{{ route('home') }}">Beranda</a></li>
-                        <li><a href="{{ route('about') }}">Tentang Kami</a></li>
-                        <li><a href="{{ route('academic') }}">Program Akademik</a></li>
+                        <li><a href="{{ route('about') }}">Profil</a></li>
+                        <li><a href="{{ route('academic') }}">Kurikulum</a></li>
                         <li><a href="{{ route('facilities') }}">Fasilitas</a></li>
+                        <li><a href="{{ route('kesiswaan') }}">Kesiswaan</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -524,8 +527,8 @@
                 <div class="footer-contact">
                     <h4>Hubungi Kami</h4>
                     <ul>
-                        <li><i class='bx bxs-map'></i> <span>Jl. Terusan Cibaduyut No.123, Bandung, Jawa Barat</span></li>
-                        <li><i class='bx bxs-phone-call'></i> <span>+62 123 4567 890</span></li>
+                        <li><i class='bx bxs-map'></i> <span>Jl. Situ Tarate Jl. Cibaduyut, Cangkuang Kulon, Kec. Dayeuhkolot, Kabupaten Bandung, Jawa Barat 40265, Indonesia Kota Bandung, Jawa Barat, 40265</span></li>
+                        <li><i class='bx bxs-phone-call'></i> <span>022 5420-220</span></li>
                         <li><i class='bx bxs-envelope'></i> <span>info@smkassalaam.sch.id</span></li>
                     </ul>
                 </div>

@@ -4,19 +4,31 @@
 
 @section('content')
     <style>
+        /*---- hero header ----*/
         .page-header {
-            padding: 150px 0 80px;
-            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('{{ asset('images/sakola.jpg') }}');
-            background-size: cover;
-            background-position: center;
-            color: var(--white);
+            padding: 160px 0 100px;
+            background: linear-gradient(135deg, rgba(0, 51, 102, .8) 0%, rgba(0, 51, 102, .6) 100%),
+                        url('{{ asset('images/sakola.jpg') }}') center/cover no-repeat;
+            color: #fff;
             text-align: center;
         }
-        
+
         .page-header h1 {
-            color: var(--white);
-            font-size: 3.5rem;
-            margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 4rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: .5rem;
+            text-shadow: 0 2px 8px rgba(0,0,0,.5);
+            color: #fff !important;
+        }
+
+        .page-header p {
+            font-size: 1.25rem;
+            font-weight: 300;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #fff !important;
         }
 
         .ekskul-grid {
@@ -27,17 +39,24 @@
         }
 
         .ekskul-card {
-            background: var(--white);
-            border-radius: 20px;
+            background: #fff;
+            border-radius: 1.25rem;
             overflow: hidden;
-            box-shadow: var(--shadow-md);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border-bottom: 5px solid var(--secondary-color);
+            box-shadow: 0 4px 20px rgba(0,0,0,.1);
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+            cursor: pointer;
+            position: relative;
         }
 
         .ekskul-card:hover {
             transform: translateY(-10px);
             box-shadow: var(--shadow-lg);
+            /* slightly lift icon on hover */
+        }
+
+        .ekskul-card:hover .ekskul-icon {
+            transform: scale(1.15) rotate(5deg);
+        }
         }
 
         .ekskul-icon {
@@ -51,6 +70,7 @@
             margin: 0 auto 20px;
             color: var(--secondary-color);
             font-size: 2rem;
+            transition: transform 0.3s ease;
         }
 
         .ekskul-content {
@@ -60,25 +80,33 @@
 
         .ekskul-content h3 {
             color: var(--primary-color);
-            margin-bottom: 15px;
-            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-size: 1.6rem;
+            font-weight: 600;
         }
 
         .ekskul-content p {
-            color: #666;
-            line-height: 1.6;
+            color: #555;
+            line-height: 1.65;
             margin-bottom: 20px;
+            min-height: 3.5rem;
         }
 
         .ekskul-badge {
             display: inline-block;
-            padding: 5px 15px;
+            padding: 6px 18px;
             background: var(--bg-light);
-            border-radius: 20px;
-            font-size: 0.85rem;
+            border-radius: 50px;
+            font-size: .85rem;
             color: var(--primary-color);
             font-weight: 600;
-            margin: 5px;
+            margin: 4px 3px;
+            transition: background .3s;
+        }
+
+        .ekskul-badge:hover {
+            background: var(--secondary-color);
+            color: #fff;
         }
 
         .section-header {
@@ -88,8 +116,9 @@
 
         .section-header h2 {
             color: var(--primary-color);
-            font-size: 2.5rem;
+            font-size: 2.75rem;
             margin-bottom: 20px;
+            font-weight: 700;
         }
 
         .section-header p {
@@ -107,7 +136,7 @@
         </div>
     </header>
 
-    <section style="padding: 100px 0;">
+    <section style="padding: 100px 0; background:#f5f7fa;">
         <div class="container">
             <div class="section-header">
                 <h2>Ekstrakurikuler Unggulan</h2>
