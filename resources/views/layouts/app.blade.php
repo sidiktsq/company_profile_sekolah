@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <!-- Icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     
@@ -353,6 +353,8 @@
                 <a href="{{ route('academic') }}" class="{{ request()->routeIs('academic') ? 'active' : '' }}">Akademik</a>
                 <a href="{{ route('facilities') }}" class="{{ request()->routeIs('facilities') ? 'active' : '' }}">Fasilitas</a>
                 <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'active' : '' }}">Kontak</a>
+                <a href="{{ route('kesiswaan') }}" class="{{ request()->routeIs('kesiswaan') ? 'active' : '' }}">Kesiswaan</a>
+                
             </div>
             <div class="header-actions">
                 <div class="search-btn" id="openSearch">

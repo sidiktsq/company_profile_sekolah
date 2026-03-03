@@ -6,7 +6,7 @@
     <style>
         .page-header {
             padding: 150px 0 80px;
-            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('https://images.unsplash.com/photo-1541339907198-e08756ebafe3?q=80&w=2070&auto=format&fit=crop');
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('{{ asset('images/sakola.jpg') }}');
             background-size: cover;
             background-position: center;
             color: var(--white);

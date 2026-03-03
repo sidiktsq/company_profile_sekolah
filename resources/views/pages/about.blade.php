@@ -7,7 +7,7 @@
     <style>
         .page-header {
             padding: 150px 0 80px;
-            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('https://images.unsplash.com/photo-1541339907198-e08756ebafe3?q=80&w=2070&auto=format&fit=crop');
+           background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('{{ asset('images/sakola.jpg') }}');
             background-size: cover;
             background-position: center;
             color: var(--white);
@@ -48,7 +48,7 @@
             <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 80px;">
                 <div style="flex: 1; min-width: 300px;">
                     <h2 style="margin-bottom: 25px;">Sejarah Kami</h2>
-                    <p style="margin-bottom: 20px;">SMK Assalaam Bandung didirikan dan diresmikan pada tanggal 2 Mei 2009 sebagai bagian dari Yayasan Assalaam Bandung yang telah berdiri sejak tahun 1952. Pada awal berdirinya, sekolah ini fokus membuka satu kompetensi keahlian, yaitu Teknik Kendaraan Ringan. Sekolah ini berkomitmen pada pendidikan berbasis kerja sama dengan dunia industri. </p>
+                    <p style="margin-bottom: 20px;">SMK Assalaam Bandung berdiri di bawah naungan Yayasan Assalaam yang dipelopori oleh ulama besar KH. Habib Utsman Al-Aydarus, dengan visi besar untuk menciptakan generasi yang tidak hanya kuat secara spiritual, tetapi juga kompeten secara teknis di dunia industri. Sejak awal didirikan, sekolah ini telah mengukuhkan posisinya sebagai pionir pendidikan kejuruan di Bandung, terutama melalui spesialisasi di bidang otomotif yang menjadi "wajah" utama institusi ini selama puluhan tahun. Seiring berjalannya waktu, SMK Assalaam berhasil bertransformasi dari sebuah bengkel pendidikan sederhana menjadi pusat keunggulan teknologi yang modern di kawasan Pasirluyu, dengan mengintegrasikan kurikulum berbasis industri dan memperluas cakupannya ke bidang teknologi informasi seperti Rekayasa Perangkat Lunak. Keberhasilan mereka terletak pada konsistensi menjaga disiplin tinggi dan kemitraan strategis dengan brand-brand otomotif raksasa, sehingga lulusannya dikenal memiliki etos kerja yang tangguh—sebuah perpaduan antara kematangan akhlak yang berakar dari tradisi pesantren dan keterampilan teknis mutakhir yang relevan dengan kebutuhan pasar kerja global.</p>
                 </div>
                 <div style="flex: 1; min-width: 300px;">
                     <img src="{{ asset('images/smk.png') }}" alt="History" style="width: 100%; max-width: 600px; border-radius: 20px; box-shadow: var(--shadow-lg);">
@@ -60,6 +60,11 @@
     <section class="vision-mission">
         <div class="container">
             <div class="vision-mission-grid">
+                <div class="card fade-in" style="background: var(--white); padding: 50px; border-radius: 20px; border-left: 10px solid var(--secondary-color); animation-delay: 0.1s;">
+                    <i class='bx bx-show-alt' style="font-size: 3.5rem; color: var(--secondary-color); margin-bottom: 20px;"></i>
+                    <h2>Visi Kami</h2>
+                    <p>menjadi lembaga pendidikan yang unggul, inovatif, dan berdaya saing di bidang teknologi/keahlian, serta membentuk lulusan berakhlak mulia, berwawasan berkelanjutan, dan bermanfaat bagi kesejahteraan dunia akhirat.</p>
+                </div>
                 <div class="card fade-in" style="background: var(--white); padding: 50px; border-radius: 20px; border-left: 10px solid var(--primary-color);">
                     <i class='bx bx-bullseye' style="font-size: 3.5rem; color: var(--primary-color); margin-bottom: 20px;"></i>
                     <h2>Misi Kami</h2>
@@ -68,11 +73,6 @@
                     <p style="margin-bottom: 15px;">- Menghasilkan lulusan yang cerdas, terampil, kompetitif, mandiri, dan berjiwa wirausaha (entrepreneurship).</p>
                     <p style="margin-bottom: 0;">- Membekali siswa dengan wawasan dunia usaha/industri serta kemampuan berwirausaha. </p>
                 </div> 
-                <div class="card fade-in" style="background: var(--white); padding: 50px; border-radius: 20px; border-left: 10px solid var(--secondary-color); animation-delay: 0.1s;">
-                    <i class='bx bx-show-alt' style="font-size: 3.5rem; color: var(--secondary-color); margin-bottom: 20px;"></i>
-                    <h2>Visi Kami</h2>
-                    <p>menjadi lembaga pendidikan yang unggul, inovatif, dan berdaya saing di bidang teknologi/keahlian, serta membentuk lulusan berakhlak mulia, berwawasan berkelanjutan, dan bermanfaat bagi kesejahteraan dunia akhirat.</p>
-                </div>
             </div>
         </div>
     </section>

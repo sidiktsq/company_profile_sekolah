@@ -51,6 +51,11 @@ class PageController extends Controller
         return view('pages.tbsm');
     }
 
+    public function kesiswaan()
+    {
+        return view('pages.kesiswaan');
+    }
+
     public function search(Request $request)
     {
         $query = $request->input('query');

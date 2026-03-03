@@ -25,20 +25,20 @@
         <div class="container">
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; text-align: center;">
                 <div class="stat-item fade-in">
-                    <h2 style="font-size: 3rem; color: var(--secondary-color);"><span class="counter" data-target="25">0</span>+</h2>
-                    <p>Tahun Keunggulan</p>
+                    <h2 style="font-size: 3rem; color: var(--secondary-color);"><span class="counter" data-target="3000">0</span>+</h2>
+                    <p>Lulusan Terbaik</p>
                 </div>
                 <div class="stat-item fade-in" style="animation-delay: 0.1s;">
-                    <h2 style="font-size: 3rem; color: var(--secondary-color);"><span class="counter" data-target="1500">0</span>+</h2>
-                    <p>Siswa Aktif</p>
+                    <h2 style="font-size: 3rem; color: var(--secondary-color);"><span class="counter" data-target="95">0</span>%</h2>
+                    <p>Telah Bekerja</p>
                 </div>
                 <div class="stat-item fade-in" style="animation-delay: 0.2s;">
                     <h2 style="font-size: 3rem; color: var(--secondary-color);"><span class="counter" data-target="100">0</span>+</h2>
-                    <p>Pendidik Ahli</p>
+                    <p>Dunia Industri</p>
                 </div>
                 <div class="stat-item fade-in" style="animation-delay: 0.3s;">
-                    <h2 style="font-size: 3rem; color: var(--secondary-color);"><span class="counter" data-target="50">0</span>+</h2>
-                    <p>Penghargaan Global</p>
+                    <h2 style="font-size: 3rem; color: var(--secondary-color);"><span class="counter" data-target="300">0</span>+</h2>
+                    <p>Kuliah di PTN</p>
                 </div>
             </div>
         </div>
@@ -76,21 +76,21 @@
                         <div style="display: flex; align-items: center; gap: 15px;">
                             <div style="width: 4px; height: 40px; background: #ef6c00; border-radius: 2px;"></div>
                             <div>
-                                <h4 style="font-size: 1.75rem; color: #333; margin-bottom: 2px;"><span class="counter" data-target="1206">0</span> +</h4>
+                                <h4 style="font-size: 1.75rem; color: #333; margin-bottom: 2px;"><span class="counter" data-target="1600">0</span> +</h4>
                                 <p style="font-size: 0.8rem; color: #e53935; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Peserta Didik</p>
                             </div>
                         </div>
                         <div style="display: flex; align-items: center; gap: 15px;">
                             <div style="width: 4px; height: 40px; background: #ef6c00; border-radius: 2px;"></div>
                             <div>
-                                <h4 style="font-size: 1.75rem; color: #333; margin-bottom: 2px;"><span class="counter" data-target="65">0</span> +</h4>
+                                <h4 style="font-size: 1.75rem; color: #333; margin-bottom: 2px;"><span class="counter" data-target="38">0</span> +</h4>
                                 <p style="font-size: 0.8rem; color: #e53935; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Guru Tendik</p>
                             </div>
                         </div>
                         <div style="display: flex; align-items: center; gap: 15px;">
                             <div style="width: 4px; height: 40px; background: #ef6c00; border-radius: 2px;"></div>
                             <div>
-                                <h4 style="font-size: 1.75rem; color: #333; margin-bottom: 2px;"><span class="counter" data-target="386">0</span> +</h4>
+                                <h4 style="font-size: 1.75rem; color: #333; margin-bottom: 2px;"><span class="counter" data-target="18">0</span> +</h4>
                                 <p style="font-size: 0.8rem; color: #e53935; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Kelas</p>
                             </div>
                         </div>
@@ -227,29 +227,39 @@
     </section>
 
     <style>
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-lg);
-        }
-        .gallery-item:hover img {
-            transform: scale(1.1);
-        }
-        .reason-bubble:hover {
-            transform: scale(1.1);
-            background: #007bff !important;
-            color: #fff !important;
-        }
-        .reason-bubble.active {
-            background: #007bff !important;
-            color: #fff !important;
-        }
-        #bubbles-container::-webkit-scrollbar {
-            display: none;
-        }
-        #bubbles-container {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
+       .stats {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 20px;
+    margin: 40px 0;
+    padding: 60px 40px !important;
+}
+
+.stat-item {
+    background: white;
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--secondary-color);
+}
+
+.stat-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.stat-item h2 {
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #666;
+    font-weight: 600;
+}
     </style>
     <script>
         const reasons = {

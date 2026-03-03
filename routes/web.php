@@ -9,6 +9,7 @@ Route::get('/academic', [PageController::class, 'academic'])->name('academic');
 Route::get('/facilities', [PageController::class, 'facilities'])->name('facilities');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::get('/sambutan', [PageController::class, 'sambutan'])->name('sambutan');
+Route::get('/kesiswaan', [PageController::class, 'kesiswaan'])->name('kesiswaan');
 
 // Program Routes
 Route::get('/rpl', [PageController::class, 'rpl'])->name('rpl');
