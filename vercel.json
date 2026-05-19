@@ -4,9 +4,6 @@
   "functions": {
     "api/index.php": {
       "runtime": "vercel-php@0.9.0"
-    },
-    "api/test.php": {
-      "runtime": "vercel-php@0.9.0"
     }
   },
   "env": {
@@ -22,7 +19,6 @@
     "SESSION_DRIVER": "cookie"
   },
   "routes": [
-    { "src": "/test", "dest": "/api/test.php" },
     { "src": "/build/(.*)", "dest": "/public/build/$1" },
     { "src": "/images/(.*)", "dest": "/public/images/$1" },
     { "src": "/(.*)", "dest": "/api/index.php" }
