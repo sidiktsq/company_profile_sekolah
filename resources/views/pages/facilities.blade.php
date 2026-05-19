@@ -3,127 +3,96 @@
 @section('title', 'Fasilitas Kami')
 
 @section('content')
-    <style>
-        .page-header {
-            padding: 150px 0 80px;
-            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('{{ asset('images/sakola.jpg') }}');
-            background-size: cover;
-            background-position: center;
-            color: var(--white);
-            text-align: center;
-        }
-
-        .facility-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .facility-item {
-            position: relative;
-            height: 300px;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: var(--shadow-md);
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .facility-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .facility-overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(transparent, rgba(0, 51, 102, 0.9));
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            padding: 30px;
-            color: var(--white);
-            opacity: 0.8;
-            transition: var(--transition);
-        }
-
-        .facility-item:hover img {
-            transform: scale(1.1);
-        }
-
-        .facility-item:hover .facility-overlay {
-            opacity: 1;
-            padding-bottom: 40px;
-        }
-    </style>
-
-    <header class="page-header">
+    <!-- Neobrutalist Page Header -->
+    <header class="page-header-neo" style="background-color: var(--neo-cyan);">
         <div class="container fade-in">
-           <h1 style="color: white;">Fasilitas Premium</h1>
-            <p style="color: white;">Menyediakan lingkungan terbaik untuk belajar, berolahraga, dan berkreasi.</p>
+            <span class="neo-badge neo-badge-yellow" style="margin-bottom: 15px;">SARANA PRASARANA</span>
+            <h1>Fasilitas Premium</h1>
+            <p>Menyediakan lingkungan belajar praktek terbaik, sarana olahraga lengkap, dan ruang ibadah yang kondusif.</p>
         </div>
     </header>
 
-    <section style="padding: 100px 0;">
-    <div class="container">
-        <div class="section-header">
-            <h2>Sekilas Tentang Sekolah Kami</h2>
-            <p>Fasilitas lengkap untuk mendukung pembelajaran dan pengembangan siswa.</p>
+    <section style="padding: 100px 0; background-color: var(--neo-bg);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <span class="neo-badge neo-badge-orange" style="margin-bottom: 15px;">DOKUMENTASI KAMPUS</span>
+                <h2 style="font-size: 2.5rem; margin-bottom: 10px;">Sekilas Tentang Sekolah Kami</h2>
+                <p style="font-size: 1.1rem; font-weight: 600; color: #555;">Fasilitas lengkap berstandar industri modern untuk mendukung penuh pembelajaran praktek siswa.</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 35px;">
+                <!-- Lab Komputer -->
+                <div class="neo-card neo-card-hover neo-card-yellow fade-in">
+                    <div style="width: 100%; height: 220px; border: 3px solid var(--neo-dark); border-radius: 8px; overflow: hidden; margin-bottom: 20px; background-color: #ffffff;">
+                        <img src="{{ asset('images/ngoding.jpg') }}" alt="Lab Komputer" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <span class="neo-badge neo-badge-white" style="margin-bottom: 12px; font-size: 0.75rem;">TEKNOLOGI INFORMASI</span>
+                    <h3 style="font-size: 1.35rem; margin-bottom: 10px; color: var(--neo-dark);">Lab Komputer Modern</h3>
+                    <p style="font-size: 0.95rem; font-weight: 500; color: #333; line-height: 1.6;">
+                        Fasilitas laboratorium komputer modern dengan spesifikasi tinggi untuk pembelajaran pengembangan software (coding) dan praktek multimedia kreatif.
+                    </p>
+                </div>
+
+                <!-- Bengkel TSM -->
+                <div class="neo-card neo-card-hover neo-card-orange fade-in" style="animation-delay: 0.1s;">
+                    <div style="width: 100%; height: 220px; border: 3px solid var(--neo-dark); border-radius: 8px; overflow: hidden; margin-bottom: 20px; background-color: #ffffff;">
+                        <img src="{{ asset('images/motorr.jpg') }}" alt="Bengkel TSM" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <span class="neo-badge neo-badge-white" style="margin-bottom: 12px; font-size: 0.75rem;">OTOMOTIF RODA DUA</span>
+                    <h3 style="font-size: 1.35rem; margin-bottom: 10px; color: var(--neo-dark);">Bengkel Motor Honda</h3>
+                    <p style="font-size: 0.95rem; font-weight: 500; color: #333; line-height: 1.6;">
+                        Laboratorium perbengkelan resmi sepeda motor yang disesuaikan penuh dengan standar AHASS PT Astra Honda Motor (AHM) untuk praktek servis mekanik otomotif.
+                    </p>
+                </div>
+
+                <!-- Bengkel TKR -->
+                <div class="neo-card neo-card-hover neo-card-cyan fade-in" style="animation-delay: 0.2s;">
+                    <div style="width: 100%; height: 220px; border: 3px solid var(--neo-dark); border-radius: 8px; overflow: hidden; margin-bottom: 20px; background-color: #ffffff;">
+                        <img src="{{ asset('images/mobil.jpg') }}" alt="Bengkel TKR" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <span class="neo-badge neo-badge-white" style="margin-bottom: 12px; font-size: 0.75rem;">OTOMOTIF RODA EMPAT</span>
+                    <h3 style="font-size: 1.35rem; margin-bottom: 10px; color: var(--neo-dark);">Bengkel Mobil TKR</h3>
+                    <p style="font-size: 0.95rem; font-weight: 500; color: #333; line-height: 1.6;">
+                        Peralatan lengkap dongkrak hidrolik, scanner mesin injeksi EFI, serta unit mobil praktek berstandar ATPM terkemuka untuk mencetak mekanik andal.
+                    </p>
+                </div>
+
+                <!-- Gedung Sekolah -->
+                <div class="neo-card neo-card-hover neo-card-green fade-in" style="animation-delay: 0.3s;">
+                    <div style="width: 100%; height: 220px; border: 3px solid var(--neo-dark); border-radius: 8px; overflow: hidden; margin-bottom: 20px; background-color: #ffffff;">
+                        <img src="{{ asset('images/sakola.jpg') }}" alt="Gedung Sekolah" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <span class="neo-badge neo-badge-white" style="margin-bottom: 12px; font-size: 0.75rem;">GEDUNG KAMPUS</span>
+                    <h3 style="font-size: 1.35rem; margin-bottom: 10px; color: var(--neo-dark);">Gedung & Ruang Kelas</h3>
+                    <p style="font-size: 0.95rem; font-weight: 500; color: #333; line-height: 1.6;">
+                        Ruang kelas teori yang bersih, rapi, dan representatif didukung proyektor digital serta lingkungan belajar yang kondusif di kawasan asri.
+                    </p>
+                </div>
+
+                <!-- Perpustakaan -->
+                <div class="neo-card neo-card-hover neo-card-pink fade-in" style="animation-delay: 0.4s;">
+                    <div style="width: 100%; height: 220px; border: 3px solid var(--neo-dark); border-radius: 8px; overflow: hidden; margin-bottom: 20px; background-color: #ffffff;">
+                        <img src="{{ asset('images/perpus.jpg') }}" alt="Perpustakaan" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <span class="neo-badge neo-badge-white" style="margin-bottom: 12px; font-size: 0.75rem;">SUMBER LITERASI</span>
+                    <h3 style="font-size: 1.35rem; margin-bottom: 10px; color: var(--neo-dark);">Perpustakaan Lengkap</h3>
+                    <p style="font-size: 0.95rem; font-weight: 500; color: #333; line-height: 1.6;">
+                        Menyediakan ribuan koleksi buku kompetensi kejuruan, novel fiksi, buku agama, majalah ilmiah, serta komputer akses internet e-library.
+                    </p>
+                </div>
+
+                <!-- Mushola -->
+                <div class="neo-card neo-card-hover neo-card-purple fade-in" style="animation-delay: 0.5s;">
+                    <div style="width: 100%; height: 220px; border: 3px solid var(--neo-dark); border-radius: 8px; overflow: hidden; margin-bottom: 20px; background-color: #ffffff;">
+                        <img src="{{ asset('images/sholat.jpg') }}" alt="Mushola" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <span class="neo-badge neo-badge-white" style="margin-bottom: 12px; font-size: 0.75rem;">IBADAH SPIRITUAL</span>
+                    <h3 style="font-size: 1.35rem; margin-bottom: 10px; color: var(--neo-dark);">Mushola Al-Kautsar</h3>
+                    <p style="font-size: 0.95rem; font-weight: 500; color: #333; line-height: 1.6;">
+                        Tempat ibadah yang bersih dan sejuk untuk memfasilitasi sholat berjamaah harian, kegiatan rohani keagamaan, serta tadarus hafalan Qur'an.
+                    </p>
+                </div>
+            </div>
         </div>
-        
-        <div class="facility-grid">
-            <!-- Lab Komputer -->
-            <div class="facility-item fade-in">
-                <img src="{{asset ('images/ngoding.jpg')}}" alt="Lab Komputer">
-                <div class="facility-overlay">
-                    <h3 style="color: white;">Lab Komputer</h3>
-                    <p>Fasilitas komputer modern untuk pembelajaran pemrograman dan desain grafis.</p>
-                </div>
-            </div>
-            <!-- Bengkel TSM -->
-            <div class="facility-item fade-in" style="animation-delay: 0.1s;">
-                <img src="{{asset ('images/motorr.jpg')}}" alt="Bengkel TSM">
-                <div class="facility-overlay">
-                    <h3 style="color: white;">Bengkel TSM</h3>
-                    <p>Bengkel lengkap untuk praktik Teknik Sepeda Motor.</p>
-                </div>
-            </div>
-            <!-- Bengkel TKR -->
-            <div class="facility-item fade-in" style="animation-delay: 0.2s;">
-                <img src="{{asset ('images/mobil.jpg')}}" alt="Bengkel TKR">
-                <div class="facility-overlay">
-                    <h3 style="color: white;">Bengkel TKR</h3>
-                    <p>Peralatan lengkap untuk praktik Teknik Kendaraan Ringan.</p>
-                </div>
-            </div>
-            <!-- Gedung Sekolah -->
-            <div class="facility-item fade-in" style="animation-delay: 0.3s;">
-                <img src="{{asset ('images/sakola.jpg')}}" alt="Gedung Sekolah">
-                <div class="facility-overlay">
-                    <h3 style="color: white;">Gedung Sekolah</h3>
-                    <p>Lingkungan belajar yang nyaman dan kondusif.</p>
-                </div>
-            </div>
-            <!-- Perpustakaan -->
-            <div class="facility-item fade-in" style="animation-delay: 0.4s;">
-                <img src="{{asset ('images/perpus.jpg')}}" alt="Perpustakaan">
-                <div class="facility-overlay">
-                    <h3 style="color: white;">Perpustakaan</h3>
-                    <p>Sumber belajar lengkap untuk menunjang pendidikan.</p>
-                </div>
-            </div>
-            <!-- Mushola -->
-            <div class="facility-item fade-in" style="animation-delay: 0.5s;">
-                <img src="{{asset ('images/sholat.jpg')}}" alt="Mushola">
-                <div class="facility-overlay">
-                    <h3 style="color: white;">Mushola</h3>
-                    <p>Tempat ibadah yang nyaman untuk warga sekolah.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 @endsection

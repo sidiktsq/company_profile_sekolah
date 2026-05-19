@@ -3,187 +3,90 @@
 @section('title', 'Tentang Kami')
 
 @section('content')
-    <!-- Pure CSS for Pages -->
-    <style>
-        /* hero header style similar to kesiswaan for consistency */
-        .page-header {
-            padding: 160px 0 100px;
-            background: linear-gradient(135deg, rgba(0,51,102,.8) 0%, rgba(0,51,102,.6) 100%),
-                        url('{{ asset('images/sakola.jpg') }}') center/cover no-repeat;
-            color: #fff;
-            text-align: center;
-        }
-
-        .page-header h1 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 4rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            margin-bottom: .5rem;
-            text-shadow: 0 2px 8px rgba(0,0,0,.5);
-            color: #fff !important;
-        }
-
-        .page-header p {
-            font-size: 1.25rem;
-            font-weight: 300;
-            max-width: 700px;
-            margin: 0 auto;
-            color: #fff !important;
-        }
-        
-        .page-header h1 {
-            color: var(--white);
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-        }
-        
-        .history-section {
-            padding: 100px 0;
-        }
-
-        .history-grid {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 80px;
-        }
-
-        .history-text {
-            flex:1;
-            min-width:300px;
-        }
-
-        .history-text h2 {
-            margin-bottom:25px;
-            font-size:2.25rem;
-            color: var(--primary-color);
-        }
-
-        .history-text p {
-            margin-bottom:20px;
-            text-align: justify;
-            line-height:1.75;
-            color:#444;
-        }
-
-        .history-img {
-            flex:1;
-            min-width:300px;
-        }
-
-        .history-img img {
-            width:100%;
-            max-width:600px;
-            border-radius:20px;
-            box-shadow:var(--shadow-lg);
-        }
-        
-        .vision-mission {
-            background-color: var(--bg-light);
-            padding: 100px 0;
-        }
-        
-        .vision-mission-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-            gap: 40px;
-        }
-
-        .vision-card {
-            background:#fff;
-            padding:40px;
-            border-radius:1rem;
-            box-shadow:0 4px 20px rgba(0,0,0,.08);
-            position:relative;
-            transition:transform .3s;
-            cursor: default;
-        }
-
-        .vision-card:hover { transform: translateY(-8px); }
-
-        .vision-card i {
-            font-size:3.5rem;
-            margin-bottom:20px;
-        }
-
-        .vision-card h2 {
-            margin-bottom:15px;
-            font-size:1.75rem;
-            color: var(--primary-color);
-        }
-
-        .vision-card p { line-height:1.6; color:#555; }
-
-        /* team section styles */
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
-            gap: 40px;
-            align-items: start;
-        }
-
-        .team-card {
-            text-align: center;
-            transition: transform .3s;
-        }
-
-        .team-card:hover { transform: translateY(-6px); }
-
-        .team-card img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 20px;
-            border: 5px solid var(--bg-light);
-        }
-
-        .team-card h3 { margin-bottom: 8px; font-size:1.25rem; }
-
-        .team-card .role {
-            color: var(--secondary-color);
-            font-weight: 600;
-        }
-    </style>
-
-    <header class="page-header">
+    <!-- Neobrutalist Page Header -->
+    <header class="page-header-neo" style="background-color: var(--neo-cyan);">
         <div class="container fade-in">
-            <h1>Cerita Kami</h1>
-            <p>Dari sebuah rumah sekolah kecil menjadi pusat keunggulan global.</p>
+            <span class="neo-badge neo-badge-yellow" style="margin-bottom: 15px;">PROFIL SEKOLAH</span>
+            <h1>Cerita & Profil Kami</h1>
+            <p>Dari sebuah rumah sekolah kecil menjadi pusat keunggulan teknologi global.</p>
         </div>
     </header>
 
-    <section class="history-section">
+    <!-- History Section -->
+    <section style="padding: 80px 0; background-color: #ffffff; border-bottom: 4px solid var(--neo-dark);">
         <div class="container">
-            <div class="history-grid">
-                <div class="history-text">
-                    <h2>Sejarah Kami</h2>
-                    <p>SMK Assalaam Bandung berdiri di bawah naungan Yayasan Assalaam yang dipelopori oleh ulama besar KH. Habib Utsman Al-Aydarus, dengan visi besar untuk menciptakan generasi yang tidak hanya kuat secara spiritual, tetapi juga kompeten secara teknis di dunia industri. Sejak awal didirikan, sekolah ini telah mengukuhkan posisinya sebagai pionir pendidikan kejuruan di Bandung, terutama melalui spesialisasi di bidang otomotif yang menjadi "wajah" utama institusi ini selama puluhan tahun. Seiring berjalannya waktu, SMK Assalaam berhasil bertransformasi dari sebuah bengkel pendidikan sederhana menjadi pusat keunggulan teknologi yang modern di kawasan Pasirluyu, dengan mengintegrasikan kurikulum berbasis industri dan memperluas cakupannya ke bidang teknologi informasi seperti Rekayasa Perangkat Lunak. Keberhasilan mereka terletak pada konsistensi menjaga disiplin tinggi dan kemitraan strategis dengan brand-brand otomotif raksasa, sehingga lulusannya dikenal memiliki etos kerja yang tangguh—sebuah perpaduan antara kematangan akhlak yang berakar dari tradisi pesantren dan keterampilan teknis mutakhir yang relevan dengan kebutuhan pasar kerja global.</p>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 60px;">
+                <div style="flex: 1.2; min-width: 320px;" class="fade-in">
+                    <div class="neo-card neo-card-white" style="padding: 40px; border-width: 4px; box-shadow: 8px 8px 0px var(--neo-dark);">
+                        <span class="neo-badge neo-badge-orange" style="margin-bottom: 20px;">SEJARAH UTAMA</span>
+                        <h2 style="font-size: 2.25rem; margin-bottom: 25px; color: var(--neo-dark);">Sejarah Kami</h2>
+                        <p style="font-size: 1.05rem; font-weight: 500; color: #333; line-height: 1.8; text-align: justify; margin-bottom: 20px;">
+                            SMK Assalaam Bandung berdiri di bawah naungan Yayasan Assalaam yang dipelopori oleh ulama besar KH. Habib Utsman Al-Aydarus, dengan visi besar untuk menciptakan generasi yang tidak hanya kuat secara spiritual, tetapi juga kompeten secara teknis di dunia industri. Sejak awal didirikan, sekolah ini telah mengukuhkan posisinya sebagai pionir pendidikan kejuruan di Bandung, terutama melalui spesialisasi di bidang otomotif yang menjadi "wajah" utama institusi ini selama puluhan tahun.
+                        </p>
+                        <p style="font-size: 1.05rem; font-weight: 500; color: #333; line-height: 1.8; text-align: justify;">
+                            Seiring berjalannya waktu, SMK Assalaam berhasil bertransformasi dari sebuah bengkel pendidikan sederhana menjadi pusat keunggulan teknologi yang modern di kawasan Pasirluyu, dengan mengintegrasikan kurikulum berbasis industri dan memperluas cakupannya ke bidang teknologi informasi seperti Rekayasa Perangkat Lunak. Keberhasilan mereka terletak pada konsistensi menjaga disiplin tinggi dan kemitraan strategis dengan brand-brand otomotif raksasa, sehingga lulusannya dikenal memiliki etos kerja yang tangguh—sebuah perpaduan antara kematangan akhlak yang berakar dari tradisi pesantren dan keterampilan teknis mutakhir yang relevan dengan kebutuhan pasar kerja global.
+                        </p>
+                    </div>
                 </div>
-                <div class="history-img">
-                    <img src="{{ asset('images/smk.png') }}" alt="History">
+                
+                <div style="flex: 0.8; min-width: 320px; display: flex; justify-content: center;" class="fade-in">
+                    <div style="position: relative; width: 100%; max-width: 380px; height: 380px; background-color: var(--neo-orange); border: 4px solid var(--neo-dark); border-radius: 16px; box-shadow: 10px 10px 0px var(--neo-dark);">
+                        <div style="position: absolute; inset: -4px; border: 4px solid var(--neo-dark); border-radius: 16px; overflow: hidden; background: #ffffff;">
+                            <img src="{{ asset('images/smk.png') }}" alt="Gedung Yayasan Assalaam" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="neo-badge neo-badge-yellow" style="position: absolute; top: 15px; left: -15px; transform: rotate(-8deg); z-index: 10;">
+                            YAYASAN ASSALAAM
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="vision-mission">
+    <!-- Vision & Mission Section -->
+    <section style="padding: 100px 0; background-color: #FEF3C7; border-bottom: 4px solid var(--neo-dark);">
         <div class="container">
-            <div class="vision-mission-grid">
-                <div class="vision-card fade-in" style="animation-delay:0.1s; border-left:10px solid var(--secondary-color);">
-                    <i class='bx bx-show-alt' style="color: var(--secondary-color);"></i>
-                    <h2>Visi Kami</h2>
-                    <p>menjadi lembaga pendidikan yang unggul, inovatif, dan berdaya saing di bidang teknologi/keahlian, serta membentuk lulusan berakhlak mulia, berwawasan berkelanjutan, dan bermanfaat bagi kesejahteraan dunia akhirat.</p>
+            <div style="text-align: center; margin-bottom: 60px;">
+                <span class="neo-badge neo-badge-green" style="margin-bottom: 15px;">FONDASI KAMI</span>
+                <h2 style="font-size: 2.5rem; margin-bottom: 10px;">Visi & Misi Sekolah</h2>
+                <p style="font-size: 1.1rem; font-weight: 600; color: #555;">Nilai-nilai inti yang mengarahkan setiap langkah pembelajaran di SMK Assalaam Bandung.</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px;">
+                <!-- Visi Card -->
+                <div class="neo-card neo-card-hover neo-card-yellow fade-in" style="border-width: 4px; box-shadow: 8px 8px 0px var(--neo-dark);">
+                    <div style="width: 60px; height: 60px; background: #ffffff; border: 3px solid var(--neo-dark); border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 3px 3px 0px var(--neo-dark); margin-bottom: 25px;">
+                        <i class='bx bx-show-alt' style="font-size: 2rem; color: var(--neo-dark);"></i>
+                    </div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Visi Kami</h3>
+                    <p style="font-size: 1.1rem; font-weight: 600; color: var(--neo-dark); line-height: 1.7;">
+                        Menjadi lembaga pendidikan yang unggul, inovatif, dan berdaya saing di bidang teknologi/keahlian, serta membentuk lulusan berakhlak mulia, berwawasan berkelanjutan, dan bermanfaat bagi kesejahteraan dunia akhirat.
+                    </p>
                 </div>
-                <div class="vision-card fade-in" style="border-left:10px solid var(--primary-color);">
-                    <i class='bx bx-bullseye' style="color: var(--primary-color);"></i>
-                    <h2>Misi Kami</h2>
-                    <ul style="padding-left:1.2rem;">
-                        <li>Menyelenggarakan pendidikan berkualitas dengan sarana lengkap, berlandaskan norma Islam, disiplin, dan amanah.</li>
-                        <li>Mengembangkan potensi siswa yang intelek dan aktif dalam merespons perkembangan.</li>
-                        <li>Menghasilkan lulusan yang cerdas, terampil, kompetitif, mandiri, dan berjiwa wirausaha (entrepreneurship).</li>
-                        <li>Membekali siswa dengan wawasan dunia usaha/industri serta kemampuan berwirausaha.</li>
+
+                <!-- Misi Card -->
+                <div class="neo-card neo-card-hover neo-card-cyan fade-in" style="border-width: 4px; box-shadow: 8px 8px 0px var(--neo-dark);">
+                    <div style="width: 60px; height: 60px; background: #ffffff; border: 3px solid var(--neo-dark); border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 3px 3px 0px var(--neo-dark); margin-bottom: 25px;">
+                        <i class='bx bx-bullseye' style="font-size: 2rem; color: var(--neo-dark);"></i>
+                    </div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Misi Kami</h3>
+                    <ul style="padding-left: 0; list-style: none;">
+                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px; font-weight: 600; font-size: 0.95rem;">
+                            <i class='bx bx-check-square' style="font-size: 1.3rem; margin-top: 2px;"></i>
+                            <span>Menyelenggarakan pendidikan berkualitas dengan sarana lengkap, berlandaskan norma Islam, disiplin, dan amanah.</span>
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px; font-weight: 600; font-size: 0.95rem;">
+                            <i class='bx bx-check-square' style="font-size: 1.3rem; margin-top: 2px;"></i>
+                            <span>Mengembangkan potensi siswa yang intelek dan aktif dalam merespons perkembangan.</span>
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px; font-weight: 600; font-size: 0.95rem;">
+                            <i class='bx bx-check-square' style="font-size: 1.3rem; margin-top: 2px;"></i>
+                            <span>Menghasilkan lulusan yang cerdas, terampil, kompetitif, mandiri, dan berjiwa wirausaha (entrepreneurship).</span>
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px; font-weight: 600; font-size: 0.95rem;">
+                            <i class='bx bx-check-square' style="font-size: 1.3rem; margin-top: 2px;"></i>
+                            <span>Membekali siswa dengan wawasan dunia usaha/industri serta kemampuan berwirausaha.</span>
+                        </li>
                     </ul>
                 </div> 
             </div>
@@ -191,32 +94,41 @@
     </section>
 
     <!-- Team Section -->
-    <section style="padding: 100px 0;">
+    <section style="padding: 100px 0; background-color: #ffffff;">
         <div class="container">
-            <div class="section-header">
-                <h2>Kepemimpinan Kami</h2>
-                <p>Profesional yang berdedikasi dan berkomitmen pada keunggulan pendidikan.</p>
+            <div style="text-align: center; margin-bottom: 60px;">
+                <span class="neo-badge neo-badge-pink" style="margin-bottom: 15px;">DEDIKASI PENUH</span>
+                <h2 style="font-size: 2.5rem; margin-bottom: 10px;">Kepemimpinan Kami</h2>
+                <p style="font-size: 1.1rem; font-weight: 600; color: #555;">Profesional yang berdedikasi tinggi dan berkomitmen kuat pada keunggulan pendidikan.</p>
             </div>
-            <div class="team-grid">
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 40px;">
                 <!-- Leader 1 -->
-                <div class="team-card fade-in">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop" alt="Principal">
-                    <h3>Dr. Robert Smith</h3>
-                    <p class="role">Kepala Sekolah Eksekutif</p>
+                <div class="neo-card neo-card-hover fade-in" style="padding: 15px; border-width: 3.5px; box-shadow: 6px 6px 0px var(--neo-dark); text-align: center;">
+                    <div style="width: 100%; height: 250px; border-radius: 8px; border: 3px solid var(--neo-dark); overflow: hidden; margin-bottom: 20px;">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop" alt="Principal" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 style="font-size: 1.2rem; margin-bottom: 5px;">Dr. Robert Smith</h3>
+                    <span class="neo-badge neo-badge-pink" style="font-size: 0.75rem;">Kepala Sekolah Eksekutif</span>
                 </div>
+                
                 <!-- Leader 2 -->
-                <div class="team-card fade-in" style="animation-delay:0.1s;">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" alt="Head of Academic">
-                    <h3>Sarah Johnson</h3>
-                    <p class="role">Kepala Akademik</p>
+                <div class="neo-card neo-card-hover fade-in" style="padding: 15px; border-width: 3.5px; box-shadow: 6px 6px 0px var(--neo-dark); text-align: center; animation-delay: 0.1s;">
+                    <div style="width: 100%; height: 250px; border-radius: 8px; border: 3px solid var(--neo-dark); overflow: hidden; margin-bottom: 20px;">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" alt="Head of Academic" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 style="font-size: 1.2rem; margin-bottom: 5px;">Sarah Johnson</h3>
+                    <span class="neo-badge neo-badge-cyan" style="font-size: 0.75rem;">Kepala Akademik</span>
                 </div>
+                
                 <!-- Leader 3 -->
-                <div class="team-card fade-in" style="animation-delay:0.2s;">
-                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop" alt="Registrar">
-                    <h3>Michael Brown</h3>
-                    <p class="role">Pendaftar Sekolah</p>
+                <div class="neo-card neo-card-hover fade-in" style="padding: 15px; border-width: 3.5px; box-shadow: 6px 6px 0px var(--neo-dark); text-align: center; animation-delay: 0.2s;">
+                    <div style="width: 100%; height: 250px; border-radius: 8px; border: 3px solid var(--neo-dark); overflow: hidden; margin-bottom: 20px;">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop" alt="Registrar" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 style="font-size: 1.2rem; margin-bottom: 5px;">Michael Brown</h3>
+                    <span class="neo-badge neo-badge-yellow" style="font-size: 0.75rem;">Pendaftar Sekolah</span>
                 </div>
-            </div>
             </div>
         </div>
     </section>

@@ -3,75 +3,129 @@
 @section('title', 'Teknik Bisnis Sepeda Motor (TBSM)')
 
 @section('content')
-<section style="padding: 100px 0; background: #eff6ff;">
+<!-- Neobrutalist Page Header -->
+<header class="page-header-neo" style="background-color: var(--neo-blue);">
+    <div class="container fade-in">
+        <span class="neo-badge neo-badge-yellow" style="margin-bottom: 15px;">KOMPETENSI KEAHLIAN</span>
+        <h1 style="-webkit-text-stroke: 1.5px var(--neo-dark); text-shadow: 4px 4px 0px var(--neo-white); color: var(--neo-white);">Teknik Bisnis Sepeda Motor (TBSM)</h1>
+        <p style="color: var(--neo-white);">Mencetak mekanik roda dua profesional berstandar AHM, handal dalam mesin injeksi FI, dan mandiri berwirausaha.</p>
+    </div>
+</header>
+
+<section style="padding: 60px 0 100px; background-color: var(--neo-bg); border-bottom: 4px solid var(--neo-dark);">
     <div class="container">
+        <!-- Back Button -->
+        <div style="margin-bottom: 40px;" class="fade-in">
+            <a href="{{ route('academic') }}" class="neo-btn neo-btn-white">
+                <i class='bx bx-left-arrow-alt' style="font-size: 1.3rem;"></i> KEMBALI KE KURIKULUM
+            </a>
+        </div>
+
         <div style="display: flex; flex-wrap: wrap; gap: 50px; align-items: flex-start;">
-            <div style="flex: 1.5; min-width: 300px;">
-                <div style="display: inline-block; padding: 10px 20px; background: rgba(30, 64, 175, 0.1); color: #1e40af; border-radius: 50px; font-weight: 600; font-size: 0.8rem; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px;">
-                    Program Keahlian
-                </div>
-                <h1 style="color: var(--primary-color); font-size: 3rem; font-weight: 800; margin-bottom: 30px;">Teknik Bisnis Sepeda Motor (TBSM)</h1>
-                <p style="font-size: 1.2rem; line-height: 1.8; color: #4b5563; margin-bottom: 40px;">
-                    Teknik Bisnis Sepeda Motor (TBSM) adalah kompetensi keahlian yang fokus pada keterampilan pelayanan jasa perbaikan dan perawatan sepeda motor. Siswa dididik untuk menjadi mekanik profesional dan memiliki jiwa kewirausahaan (entrepreneurship) di bidang otomotif roda dua.
+            
+            <!-- Left: Curriculum Grid -->
+            <div style="flex: 1.5; min-width: 320px;" class="fade-in">
+                <span class="neo-badge neo-badge-pink" style="margin-bottom: 15px;">FOKUS KOMPETENSI</span>
+                <h2 style="font-size: 2rem; margin-bottom: 25px; color: var(--neo-dark);">Apa Yang Dipelajari?</h2>
+                <p style="font-size: 1.1rem; line-height: 1.7; font-weight: 500; color: #4A4A4A; margin-bottom: 40px; background: #ffffff; padding: 20px; border: 3px solid var(--neo-dark); border-radius: 8px; box-shadow: 4px 4px 0px var(--neo-dark);">
+                    Kurikulum TBSM SMK Assalaam berfokus pada pembekalan keahlian servis berkala sepeda motor, sistem kelistrikan injeksi modern, sasis roda dua, serta dibekali dengan kemampuan manajemen bisnis bengkel dan safety riding.
                 </p>
 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
-                    <div style="background: var(--white); padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
-                        <i class='bx bx-cycling' style="font-size: 2.5rem; color: #1e40af; margin-bottom: 20px;"></i>
-                        <h4 style="color: var(--primary-color); margin-bottom: 15px;">Motorcycle Engine</h4>
-                        <p style="font-size: 0.9rem; color: #6b7280;">Mendalami sistem mesin 2-tak dan 4-tak, serta teknologi Fuel Injection (FI) terbaru.</p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px;">
+                    <!-- Engine -->
+                    <div class="neo-card neo-card-hover neo-card-white" style="border-width: 3px; box-shadow: 5px 5px 0px var(--neo-dark);">
+                        <div style="width: 50px; height: 50px; background: var(--neo-yellow); border: 2px solid var(--neo-dark); border-radius: 8px; display: flex; align-items: center; justify-content: center; box-shadow: 2px 2px 0px var(--neo-dark); margin-bottom: 20px; font-size: 1.5rem;">
+                            <i class='bx bx-cycling'></i>
+                        </div>
+                        <h4 style="font-size: 1.15rem; margin-bottom: 10px; color: var(--neo-dark);">Motorcycle Engine</h4>
+                        <p style="font-size: 0.85rem; font-weight: 500; color: #555; line-height: 1.6;">Mendalami sistem mesin 2-tak dan 4-tak, perbaikan silinder kop, serta teknologi Fuel Injection (FI) modern.</p>
                     </div>
-                    <div style="background: var(--white); padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
-                        <i class='bx bx-bolt-circle' style="font-size: 2.5rem; color: #1e40af; margin-bottom: 20px;"></i>
-                        <h4 style="color: var(--primary-color); margin-bottom: 15px;">Electric & Control</h4>
-                        <p style="font-size: 0.9rem; color: #6b7280;">Pemeliharaan sistem kelistrikan, sistem starter, dan manajemen mesin elektronik pada motor.</p>
+
+                    <!-- Electric -->
+                    <div class="neo-card neo-card-hover neo-card-white" style="border-width: 3px; box-shadow: 5px 5px 0px var(--neo-dark);">
+                        <div style="width: 50px; height: 50px; background: var(--neo-cyan); border: 2px solid var(--neo-dark); border-radius: 8px; display: flex; align-items: center; justify-content: center; box-shadow: 2px 2px 0px var(--neo-dark); margin-bottom: 20px; font-size: 1.5rem;">
+                            <i class='bx bx-bolt-circle'></i>
+                        </div>
+                        <h4 style="font-size: 1.15rem; margin-bottom: 10px; color: var(--neo-dark);">Electric & Control</h4>
+                        <p style="font-size: 0.85rem; font-weight: 500; color: #555; line-height: 1.6;">Pemeliharaan sistem pengapian, starter kelistrikan motor, sensor kontrol emisi, serta kelistrikan sasis bodi motor.</p>
                     </div>
-                    <div style="background: var(--white); padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
-                        <i class='bx bx-store' style="font-size: 2.5rem; color: #1e40af; margin-bottom: 20px;"></i>
-                        <h4 style="color: var(--primary-color); margin-bottom: 15px;">Workshop Business</h4>
-                        <p style="font-size: 0.9rem; color: #6b7280;">Mempelajari manajemen bengkel, pelayanan pelanggan, dan strategi bisnis suku cadang.</p>
+
+                    <!-- Business -->
+                    <div class="neo-card neo-card-hover neo-card-white" style="border-width: 3px; box-shadow: 5px 5px 0px var(--neo-dark);">
+                        <div style="width: 50px; height: 50px; background: var(--neo-pink); border: 2px solid var(--neo-dark); border-radius: 8px; display: flex; align-items: center; justify-content: center; box-shadow: 2px 2px 0px var(--neo-dark); margin-bottom: 20px; font-size: 1.5rem;">
+                            <i class='bx bx-store'></i>
+                        </div>
+                        <h4 style="font-size: 1.15rem; margin-bottom: 10px; color: var(--neo-dark);">Workshop Business</h4>
+                        <p style="font-size: 0.85rem; font-weight: 500; color: #555; line-height: 1.6;">Mempelajari tata administrasi bengkel, cara melayani pelanggan ramah, serta manajemen penjualan suku cadang spare-parts.</p>
                     </div>
-                    <div style="background: var(--white); padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
-                        <i class='bx bx-shield-quarter' style="font-size: 2.5rem; color: #1e40af; margin-bottom: 20px;"></i>
-                        <h4 style="color: var(--primary-color); margin-bottom: 15px;">Safety & Driving</h4>
-                        <p style="font-size: 0.9rem; color: #6b7280;">Edukasi tentang keselamatan berkendara (Safety Riding) dan standar keamanan kerja di bengkel.</p>
+
+                    <!-- Safety -->
+                    <div class="neo-card neo-card-hover neo-card-white" style="border-width: 3px; box-shadow: 5px 5px 0px var(--neo-dark);">
+                        <div style="width: 50px; height: 50px; background: var(--neo-green); border: 2px solid var(--neo-dark); border-radius: 8px; display: flex; align-items: center; justify-content: center; box-shadow: 2px 2px 0px var(--neo-dark); margin-bottom: 20px; font-size: 1.5rem;">
+                            <i class='bx bx-shield-quarter'></i>
+                        </div>
+                        <h4 style="font-size: 1.15rem; margin-bottom: 10px; color: var(--neo-dark);">Safety & Driving</h4>
+                        <p style="font-size: 0.85rem; font-weight: 500; color: #555; line-height: 1.6;">Edukasi teori berkendara aman (Safety Riding), kontrol emisi gas buang, serta standar K3 industri bengkel.</p>
                     </div>
                 </div>
             </div>
 
-            <div style="flex: 1; min-width: 300px; position: sticky; top: 120px;">
-                <div style="background: #1e40af; color: var(--white); padding: 40px; border-radius: 30px; box-shadow: 0 20px 40px rgba(30, 64, 175, 0.2);">
-                    <h3 style="color: #bfdbfe; margin-bottom: 20px;">Honda Career Path</h3>
-                    <p style="font-size: 0.9rem; opacity: 0.9; margin-bottom: 25px;">Program khusus kerjasama dengan PT Astra Honda Motor (AHM) untuk penyaluran lulusan.</p>
-                    <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; border-left: 4px solid #facc15;">
-                        <p style="font-size: 0.85rem; font-style: italic;">"Lulusan TBSM SMK Assalaam diprioritaskan bekerja di jaringan AHASS di seluruh Jawa Barat."</p>
+            <!-- Right: Sidebar Info -->
+            <div style="flex: 1; min-width: 300px; position: sticky; top: 120px;" class="fade-in">
+                <div class="neo-card neo-card-blue" style="border-width: 4px; box-shadow: 8px 8px 0px var(--neo-dark); color: var(--neo-white); padding: 35px;">
+                    <h3 style="color: var(--neo-yellow); margin-bottom: 20px; -webkit-text-stroke: 1px #000;">Honda Career Path</h3>
+                    <p style="font-size: 0.95rem; font-weight: 600; line-height: 1.6; margin-bottom: 25px;">Program sinkronisasi kurikulum dan penyaluran lulusan dengan PT Astra Honda Motor (AHM).</p>
+                    <div style="background: rgba(255,255,255,0.15); padding: 20px; border: 2px solid var(--neo-white); border-radius: 10px; border-left: 5px solid var(--neo-yellow); margin-bottom: 25px; box-shadow: 2px 2px 0px var(--neo-dark);">
+                        <p style="font-size: 0.85rem; font-style: italic; font-weight: 600;">"Lulusan TBSM SMK Assalaam diprioritaskan untuk terserap bekerja di seluruh jaringan bengkel resmi AHASS Jawa Barat."</p>
                     </div>
-                    <a href="{{ route('contact') }}" class="btn btn-secondary" style="width: 100%; margin-top: 30px; text-align: center; background: #facc15; color: #1e40af;">Gabung Bersama Kami</a>
+                    <a href="{{ route('contact') }}" class="neo-btn neo-btn-yellow" style="width: 100%; justify-content: center; color: var(--neo-dark);">Info Pendaftaran TBSM</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Learning Environment -->
-<section style="padding: 100px 0; background: var(--white);">
+<!-- Link & Match Section -->
+<section style="padding: 100px 0; background-color: #ffffff;">
     <div class="container">
-        <h2 style="color: var(--primary-color); text-align: center; font-size: 2.5rem; margin-bottom: 60px;">Link & Match Industri</h2>
+        <div style="text-align: center; margin-bottom: 60px;">
+            <span class="neo-badge neo-badge-green" style="margin-bottom: 15px;">LINK & MATCH</span>
+            <h2 style="font-size: 2.5rem; margin-bottom: 10px;">Kolaborasi Industri Nyata</h2>
+            <p style="font-size: 1.1rem; font-weight: 600; color: #555;">Keterpaduan kurikulum dengan dunia industri untuk melahirkan alumni berdaya saing tinggi.</p>
+        </div>
+        
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
-            <div style="padding: 30px; background: #f8fafc; border-radius: 20px;">
-                <i class='bx bx-briefcase' style="font-size: 2rem; color: var(--primary-color); margin-bottom: 15px;"></i>
-                <h5 style="margin-bottom: 10px;">Magang Industri</h5>
-                <p style="font-size: 0.85rem; color: #64748b;">Praktik Kerja Lapangan di bengkel resmi AHASS selama 3-6 bulan untuk pengalaman nyata.</p>
+            <!-- Magang -->
+            <div class="neo-card neo-card-white" style="border-width: 3px; box-shadow: 6px 6px 0px var(--neo-yellow); padding: 30px;">
+                <div style="width: 50px; height: 50px; background: #FEF3C7; border: 2.5px solid var(--neo-dark); border-radius: 8px; display: flex; align-items: center; justify-content: center; box-shadow: 2.5px 2.5px 0px var(--neo-dark); margin-bottom: 20px; font-size: 1.5rem; color: #d97706;">
+                    <i class='bx bx-briefcase'></i>
+                </div>
+                <h4 style="margin-bottom: 10px;">Magang Industri</h4>
+                <p style="color: #555; line-height: 1.6; font-size: 0.9rem; font-weight: 500;">
+                    Praktik Kerja Lapangan (PKL) langsung di bengkel resmi AHASS selama 3 hingga 6 bulan untuk mengasah mental kerja dan praktek nyata.
+                </p>
             </div>
-            <div style="padding: 30px; background: #f8fafc; border-radius: 20px;">
-                <i class='bx bx-user-voice' style="font-size: 2rem; color: var(--primary-color); margin-bottom: 15px;"></i>
-                <h5 style="margin-bottom: 10px;">Guru Tamu</h5>
-                <p style="font-size: 0.85rem; color: #64748b;">Mendatangkan instruktur ahli langsung dari industri otomotif secara berkala.</p>
+
+            <!-- Guru Tamu -->
+            <div class="neo-card neo-card-white" style="border-width: 3px; box-shadow: 6px 6px 0px var(--neo-orange); padding: 30px;">
+                <div style="width: 50px; height: 50px; background: #FFF7ED; border: 2.5px solid var(--neo-dark); border-radius: 8px; display: flex; align-items: center; justify-content: center; box-shadow: 2.5px 2.5px 0px var(--neo-dark); margin-bottom: 20px; font-size: 1.5rem; color: #f97316;">
+                    <i class='bx bx-user-voice'></i>
+                </div>
+                <h4 style="margin-bottom: 10px;">Guru Tamu Industri</h4>
+                <p style="color: #555; line-height: 1.6; font-size: 0.9rem; font-weight: 500;">
+                    Secara berkala mendatangkan instruktur ahli berpengalaman langsung dari PT Astra Honda Motor (AHM) untuk mentransfer skill terkini.
+                </p>
             </div>
-            <div style="padding: 30px; background: #f8fafc; border-radius: 20px;">
-                <i class='bx bx-id-card' style="font-size: 2rem; color: var(--primary-color); margin-bottom: 15px;"></i>
-                <h5 style="margin-bottom: 10px;">Uji Kompetensi</h5>
-                <p style="font-size: 0.85rem; color: #64748b;">Ujian akhir yang diuji langsung oleh instruktur dari AHM untuk validasi keahlian.</p>
+
+            <!-- Uji Kompetensi -->
+            <div class="neo-card neo-card-white" style="border-width: 3px; box-shadow: 6px 6px 0px var(--neo-blue); padding: 30px;">
+                <div style="width: 50px; height: 50px; background: #EFF6FF; border: 2.5px solid var(--neo-dark); border-radius: 8px; display: flex; align-items: center; justify-content: center; box-shadow: 2.5px 2.5px 0px var(--neo-dark); margin-bottom: 20px; font-size: 1.5rem; color: #2563eb;">
+                    <i class='bx bx-id-card'></i>
+                </div>
+                <h4 style="margin-bottom: 10px;">Uji Kompetensi Ahli</h4>
+                <p style="color: #555; line-height: 1.6; font-size: 0.9rem; font-weight: 500;">
+                    Ujian akhir kompetensi kejuruan dinilai langsung oleh tim asesor industri berlisensi resmi dari AHM untuk memvalidasi kualifikasi lulusan.
+                </p>
             </div>
         </div>
     </div>
