@@ -259,11 +259,91 @@ a {
 }
 
 /* Responsive Utilities */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .page-header-neo h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
     .page-header-neo p {
-        font-size: 1rem;
+        font-size: 1.1rem;
+    }
+    
+    /* General flex scaling */
+    div[style*="gap: 60px"] {
+        gap: 30px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header-neo {
+        padding: 100px 0 40px !important;
+    }
+    .page-header-neo h1 {
+        font-size: 2.2rem;
+    }
+    .page-header-neo p {
+        font-size: 0.95rem;
+    }
+    
+    /* Section padding responsive scaling */
+    section[style*="padding: 100px 0"] {
+        padding: 50px 0 !important;
+    }
+    section[style*="padding: 60px 0"] {
+        padding: 40px 0 !important;
+    }
+    
+    /* Font sizing scaling */
+    h1[style*="font-size: 5rem"] {
+        font-size: 3rem !important;
+    }
+    h2[style*="font-size: 2.5rem"], h2[style*="font-size: 2.25rem"] {
+        font-size: 1.8rem !important;
+    }
+    
+    /* Flex wrapping sizing fixes */
+    div[style*="flex: 1.2"], div[style*="flex: 1.3"] {
+        flex: 1 !important;
+    }
+    div[style*="gap: 60px"], div[style*="gap: 50px"] {
+        gap: 25px !important;
+    }
+    
+    /* Fixed sized containers overflow protection */
+    div[style*="height: 350px"][style*="max-width: 420px"],
+    div[style*="height: 460px"][style*="max-width: 360px"] {
+        height: auto !important;
+        aspect-ratio: 4/3 !important;
+        max-width: 100% !important;
+    }
+    div[style*="inset: -4px"] {
+        position: relative !important;
+        height: 250px !important;
+    }
+    
+    /* Grid layout 3-col compact stats block on home page */
+    div[style*="grid-template-columns: repeat(3, 1fr)"] {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+    
+    /* Footer styling */
+    footer {
+        padding: 50px 0 20px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    h1[style*="font-size: 5rem"] {
+        font-size: 2.4rem !important;
+    }
+    .neo-badge {
+        font-size: 0.75rem !important;
+    }
+    .neo-card {
+        padding: 20px !important;
+    }
+    div[style*="flex-wrap: wrap"] a.neo-btn {
+        width: 100% !important;
+        margin-bottom: 5px;
     }
 }

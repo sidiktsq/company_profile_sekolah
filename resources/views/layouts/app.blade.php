@@ -301,10 +301,112 @@
             letter-spacing: 0.5px;
         }
 
+        /* Mobile Navigation Drawer */
+        .mobile-nav-drawer {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 85%;
+            max-width: 320px;
+            height: 100%;
+            background: #ffffff;
+            border-left: 4px solid var(--neo-dark);
+            box-shadow: -10px 0px 0px rgba(26,26,26,0.15);
+            z-index: 2500;
+            transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mobile-nav-drawer.active {
+            right: 0;
+        }
+
+        .mobile-nav-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(26, 26, 26, 0.6);
+            backdrop-filter: blur(4px);
+            z-index: 2400;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-nav-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-nav-content {
+            padding: 25px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+
+        .mobile-nav-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid var(--neo-dark);
+            padding-bottom: 15px;
+        }
+
+        .mobile-nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .mobile-nav-link {
+            padding: 12px 18px;
+            font-size: 1.05rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            border: 3px solid var(--neo-dark);
+            border-radius: 8px;
+            background: #ffffff;
+            box-shadow: 4px 4px 0px var(--neo-dark);
+            transition: all 0.15s ease-out;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .mobile-nav-link:hover, .mobile-nav-link.active {
+            background: var(--neo-yellow);
+            transform: translate(-3px, -3px);
+            box-shadow: 7px 7px 0px var(--neo-dark);
+        }
+
         @media (max-width: 992px) {
+            .nav-links {
+                display: none !important;
+            }
+            #mobileMenuToggle {
+                display: flex !important;
+            }
             .footer-grid {
                 grid-template-columns: 1fr 1fr;
                 gap: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 10px 0;
+            }
+            .logo-box span {
+                font-size: 1rem;
+            }
+            .logo-img {
+                height: 36px;
             }
         }
 
@@ -313,12 +415,7 @@
                 grid-template-columns: 1fr;
             }
             .navbar .container {
-                flex-direction: column;
-                gap: 15px;
-            }
-            .nav-links {
-                flex-wrap: wrap;
-                justify-content: center;
+                padding: 0 15px;
             }
         }
     </style>
@@ -341,6 +438,9 @@
             <div class="header-actions">
                 <button class="neo-btn neo-btn-cyan" id="openSearch" style="padding: 10px; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;">
                     <i class='bx bx-search' style="font-size: 1.3rem;"></i>
+                </button>
+                <button class="neo-btn neo-btn-yellow" id="mobileMenuToggle" style="display: none; padding: 10px; width: 44px; height: 44px; align-items: center; justify-content: center; border-width: 3px; box-shadow: 3px 3px 0px var(--neo-dark);">
+                    <i class='bx bx-menu' style="font-size: 1.5rem;"></i>
                 </button>
             </div>
         </div>
@@ -370,6 +470,55 @@
                     <a href="{{ route('search', ['query' => 'RPL']) }}" class="neo-badge neo-badge-white" style="cursor: pointer;">RPL</a>
                     <a href="{{ route('search', ['query' => 'Jurusan']) }}" class="neo-badge neo-badge-white" style="cursor: pointer;">Jurusan</a>
                     <a href="{{ route('search', ['query' => 'Kontak']) }}" class="neo-badge neo-badge-white" style="cursor: pointer;">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Overlay & Drawer -->
+    <div id="mobileNavOverlay" class="mobile-nav-overlay"></div>
+    <div id="mobileNavDrawer" class="mobile-nav-drawer">
+        <div class="mobile-nav-content">
+            <div class="mobile-nav-header">
+                <div class="logo-box">
+                    <img src="{{ asset('images/smk.png') }}" alt="Logo" class="logo-img" style="height: 35px; box-shadow: none; border-width: 2px;">
+                    <span style="font-size: 1.05rem;">Assalaam</span>
+                </div>
+                <button class="neo-btn neo-btn-pink" id="closeMobileMenu" style="padding: 10px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-width: 3px; box-shadow: 2px 2px 0px var(--neo-dark);">
+                    <i class='bx bx-x' style="font-size: 1.4rem;"></i>
+                </button>
+            </div>
+            <div class="mobile-nav-links">
+                <a href="{{ route('home') }}" class="mobile-nav-link {{ request()->routeIs('home') ? 'active' : '' }}">
+                    <span>Beranda</span>
+                    <i class='bx bx-chevron-right'></i>
+                </a>
+                <a href="{{ route('about') }}" class="mobile-nav-link {{ request()->routeIs('about') ? 'active' : '' }}">
+                    <span>Profil</span>
+                    <i class='bx bx-chevron-right'></i>
+                </a>
+                <a href="{{ route('academic') }}" class="mobile-nav-link {{ request()->routeIs('academic') ? 'active' : '' }}">
+                    <span>Kurikulum</span>
+                    <i class='bx bx-chevron-right'></i>
+                </a>
+                <a href="{{ route('facilities') }}" class="mobile-nav-link {{ request()->routeIs('facilities') ? 'active' : '' }}">
+                    <span>Fasilitas</span>
+                    <i class='bx bx-chevron-right'></i>
+                </a>
+                <a href="{{ route('kesiswaan') }}" class="mobile-nav-link {{ request()->routeIs('kesiswaan') ? 'active' : '' }}">
+                    <span>Kesiswaan</span>
+                    <i class='bx bx-chevron-right'></i>
+                </a>
+                <a href="{{ route('contact') }}" class="mobile-nav-link {{ request()->routeIs('contact') ? 'active' : '' }}">
+                    <span>Kontak</span>
+                    <i class='bx bx-chevron-right'></i>
+                </a>
+            </div>
+            <div style="margin-top: auto; padding-top: 30px;">
+                <div class="neo-card neo-card-yellow" style="padding: 15px; border-width: 3px; box-shadow: 4px 4px 0px var(--neo-dark); background: #ffffff; text-align: center;">
+                    <h4 style="font-size: 0.95rem; margin-bottom: 8px;">SMK Assalaam</h4>
+                    <p style="font-size: 0.8rem; font-weight: 700;">022 5420-220</p>
+                    <p style="font-size: 0.75rem; font-weight: 500; color: #555; margin-top: 4px;">info@smkassalaam.sch.id</p>
                 </div>
             </div>
         </div>
@@ -474,11 +623,39 @@
 
         // Close on escape key
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && searchOverlay.classList.contains('active')) {
-                searchOverlay.classList.remove('active');
-                document.body.style.overflow = 'auto';
+            if (e.key === 'Escape') {
+                if (searchOverlay.classList.contains('active')) {
+                    searchOverlay.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+                if (mobileNavDrawer.classList.contains('active')) {
+                    mobileNavDrawer.classList.remove('active');
+                    mobileNavOverlay.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
             }
         });
+
+        // Mobile Nav Drawer Toggle Logic
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const closeMobileMenu = document.getElementById('closeMobileMenu');
+        const mobileNavDrawer = document.getElementById('mobileNavDrawer');
+        const mobileNavOverlay = document.getElementById('mobileNavOverlay');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileNavDrawer.classList.add('active');
+            mobileNavOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        const hideMobileMenu = () => {
+            mobileNavDrawer.classList.remove('active');
+            mobileNavOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        };
+
+        closeMobileMenu.addEventListener('click', hideMobileMenu);
+        mobileNavOverlay.addEventListener('click', hideMobileMenu);
 
         // Scroll Reveal and Counter Animations
         document.addEventListener('DOMContentLoaded', () => {
