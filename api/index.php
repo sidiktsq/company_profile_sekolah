@@ -7,7 +7,15 @@ try {
     require __DIR__ . '/../public/index.php';
 } catch (\Throwable $e) {
     echo "<h1>Laravel Boot Crash!</h1>";
-    echo "<b>Error Message:</b> " . $e->getMessage() . "<br>";
-    echo "<b>File:</b> " . $e->getFile() . " on line " . $e->getLine() . "<br>";
-    echo "<h3>Stack Trace:</h3><pre>" . $e->getTraceAsString() . "</pre>";
+    $current = $e;
+    $i = 1;
+    while ($current) {
+        echo "<h2>Exception #$i</h2>";
+        echo "<b>Class:</b> " . get_class($current) . "<br>";
+        echo "<b>Error Message:</b> " . $current->getMessage() . "<br>";
+        echo "<b>File:</b> " . $current->getFile() . " on line " . $current->getLine() . "<br>";
+        echo "<h3>Stack Trace #$i:</h3><pre>" . $current->getTraceAsString() . "</pre><hr>";
+        $current = $current->getPrevious();
+        $i++;
+    }
 }
